@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/energySchoolLogo.png">
+    <title>Energy School</title>
+    <meta name="description" content="Ծրագրավորման դասընթացներ Energy School-ի հետ։ Սովորի՛ր ծրագրավորում, UI/UX դիզայն, անգլերեն, բանկային գործ և այլ արդի մասնագիտություններ որոկավորված մասնագետների հետ։">
+    <meta name="keywords" content="HTML, CSS, JavaScript, ծրագրավորում, դիզայն, անգլերեն">
+    <meta name="author" content="Energy School">
+    <script src="https://kit.fontawesome.com/9552352051.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav >
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./image/energySchoolLogo.png" alt="Energy School logo">
+                    <span>Energy School</span>
+                </div>
+                <button class="menu-btn-container" onclick="menuBtnAnimation(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div class="language-bar">
+                    <img src="./image/Flag_of_Armenia.png" alt="flag of Armenia">
+                    <img src="./image/Flag_of_the_United_States.png" alt="flag of USA">
+                    <img src="./image/Flag_of_Russia.png" alt="flag of Russia">
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#register">General</a> <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                        <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                      </svg></li>
+                    <li><a href="#courses">Courses</a> <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                        <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                      </svg></li>
+                    <li><a href="#about">About us</a> <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                        <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                      </svg></li>
+                    <li><a href="#contact">Contact us</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                            <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                          </svg>
+                    </li>
+                    <li><a href="">Blog</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                            <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                          </svg></li>
+                    <li><a href="">Pass test</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" class="arrow" viewBox="0 0 82 24" fill="none">
+                            <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="#009396"/>
+                          </svg></li>
+                </ul>
+            </div>
+         
+
+        </nav>
+        <div class="home">
+            <p>Education is the most powerful weapon which you can use for changing the world.</p>
+            <p>Nelson Mandela</p>
+
+        </div>
+    </header>
+    <main>
+        <section id="register">
+            <div class="register-info">
+                <div class="register-info-header">
+                    <div class="line"></div>
+                    <h1>Register</h1>
+                    <div class="line"></div>
+                </div>
+                <h2>Register to our courses and change your world.</h2>
+                <p>For introducing to our courses press “Learn more” button.</p>
+                <button type="button" class="learn-more-btn">Learn more</button>
+            </div>
+            <div class="register-form">
+                <div class="register-form-header">
+                    <div class="line"></div>
+                    <h1>Enter data</h1>
+                    <div class="line"></div>
+                </div>
+                <p>In the text field point the course you want to take part in.</p>
+                <form>
+                    <input type="text" name="lastName" id="lastName" placeholder="Name"><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Sername"><br>
+                    <input type="tel" name="tel" id="tel" placeholder="Phone">
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email"><br>
+                    
+                    <fieldset>
+                        <legend>Text</legend>
+                        <textarea name="message" id="message"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Register"><br>
+                </form>
+
+            </div>
+            <div class="register-img"></div>
+        </section>
+        <section id="services">
+            <div class="service">
+                <div class="service-header">
+                    <img src="image/coursesIt.png" alt="courses programming">
+                    <h2>Courses in IT field</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="service">
+                <div class="service-header">
+                    <img src="image/coursesfinancial.png" alt="courses in financial">
+                    <h2>Courses in financial field</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="service">
+                <div class="service-header">
+                    <img src="image/busines.png" alt="busines digitalization" >
+                    <h2>Business digitalization</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-color">
+                <div class="about-info">
+                    <div class="about-header">
+                        <div class="line"></div>
+                        <h1>About us</h1>
+                        <div class="line"></div>
+                    </div>
+                    <p>Our main purpose is to prepare such specialists who will be able to find job in any field they prefer.</p>
+                    <button type="button" class="read-more">Read more</button>
+
+                </div>
+                <div class="about-img">
+                    <div class="hexagon">
+                        <div class="hexagon-inner">
+                            <div class="hexagon-inner-in"></div>
+                        </div>
+                    </div>         
+                </div>
+
+            </div>
+
+        </section>
+        <section id="courses">
+            <div class="course ui-ux">
+                <div class="course-color">
+                    <h2>UI/UX design</h2>
+                    <p>UI/UX design for beginners.</p>  
+                    <button type="button" class="register-courses">Register</button>   
+                </div>
+            </div>
+            <div class="course web-programming">
+                <div class="course-color">
+                    <h2>Web programming</h2>
+                    <p>
+                        Web programming course for beginners
+                    </p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course copywriting">
+                <div class="course-color">
+                    <h2>Copywriting</h2>
+                    <p>Start writing selling texts with Energy School.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course smm">
+                <div class="course-color">
+                    <h2>SMM course</h2>
+                    <p>SMM course for beginners. Develop your digital knowledge with our professional specialists.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course project-management">
+                <div class="course-color">
+                    <h2>Project management</h2>
+                    <p>Introduce to project management skills with Energy School. </p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course qa">
+                <div class="course-color">
+                    <h2>QA fundamental</h2>
+                    <p>QA testing course for beginners.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course python">
+                <div class="course-color">
+                    <h2>Python</h2>
+                    <p>Learn the most wanted programming language.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course seo">
+                <div class="course-color">
+                    <h2>SEO</h2>
+                    <p>Get practic knowledge about SEO which will give you opportunity to run websites more effeciently.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course english">
+                <div class="course-color">
+                    <h2>English</h2>
+                    <p>English group and private courses. Groups are formed according to relevant knowledge.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course accounting">
+                <div class="course-color">
+                    <h2>Accounting</h2>
+                    <p>Course duration is 4 months. After graduating the course you can work as an accountant or you can compose your own business reports.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course banking">
+                <div class="course-color">
+                    <h2>Banking</h2>
+                    <p>If you want to start your career in bank, you can attend to our 5 months courses, during that you will get knowledge about banks laws, banking activity.  </p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+            <div class="course hr">
+                <div class="course-color">
+                    <h2>HR</h2>
+                    <p>During the courses you will get whole and practic knowledge according to program directions, at the same time you will get HR specialization.</p>
+                    <button type="button" class="register-courses">Register</button> 
+                </div>
+            </div>
+        </section>
+   
+        <section id="sales">
+            
+      <div class="big-sale big-sale1">
+        <div class="sale-small sale-grey"></div>
+        <div class="sale-small sale-green">
+            <div class="sale-info">
+            <h2>10%</h2>
+            <strong>Register with 2 and get
+                10% discount
+                possibility</strong>
+            <ol>
+                <li>5 students in each group</li>
+                <li>3 lessons in a week</li>
+                <li>1 week trial lesson possibility</li>
+            </ol>
+        </div>
+       
+        </div>
+        <div class="sale-small sale-green"></div>
+        <div class="sale-small sale-grey"></div>
+      </div>
+      <div class="big-sale big-sale2">
+        <div class="sale-small sale-grey"></div>
+        <div class="sale-small sale-green">
+            <div class="sale-info">
+                <h2>10%</h2>
+                <strong>10% discount possibility for students</strong>
+                <ol>
+                    <li>5 students in each group</li>
+                    <li>3 lessons in a week</li>
+                    <li>1 week trial lesson possibility</li>
+                </ol>
+            </div>
+        </div>
+        <div class="sale-small sale-green2">
+            <div class="sale-info">
+                <h2>10%</h2>
+                <strong>Register with 2 and get
+                    10% discount
+                    possibility</strong>
+                <ol>
+                    <li>5 students in each group</li>
+                    <li>3 lessons in a week</li>
+                    <li>1 week trial lesson possibility</li>
+                </ol>
+            </div>
+            
+        </div>
+        <div class="sale-small sale-grey"></div>
+      </div>
+      
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <img src="./image/energySchoolLogo.png" alt="logo">
+            <h1>Energy School</h1>
+        </div>
+        <div class="contact-info">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>  29.4 Gyulikevkhyan, Yerevan, Armenia</li>
+                <li><i class="fa-solid fa-phone"></i> +374 94 15 21 12</li>
+                <li><i class="fa-solid fa-envelope"></i> info@energyschool.am</li>
+            </ul>
+            <hr>
+            <p>© 2022 Energyschool</p>
+        </div>
+        <div class="social-media">
+            Social-media: <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>
