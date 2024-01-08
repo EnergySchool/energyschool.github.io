@@ -32,7 +32,6 @@ header{
     align-items: center;
 }
 .logo>span{
-    font-family: Open Sans;
     font-size: 45px;
     font-style: normal;
     font-weight: 600;
@@ -44,10 +43,10 @@ header{
 nav{
     /* background-color: black; */
     border-bottom: 750px solid black;
-	border-left: 0px solid transparent;
-	border-right: 250px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 250px solid transparent;
     height: 750px;
-	width: 65%;
+    width: 65%;
    
 }
 .menu{
@@ -155,7 +154,6 @@ button{
     top:200px;
     z-index: 3;
     color:white;
-    font-family: Open Sans;
     padding: 70px;
    
 }
@@ -378,7 +376,6 @@ fieldset{
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    font-family: Open Sans;
     line-height: 32px;
     transition: all 0.5s;
   }
@@ -527,14 +524,12 @@ fieldset{
   .logo-footer{
     display: flex;
     align-items: center;
-    font-family: Open Sans;
    font-style: normal;
    font-weight: 600;
    line-height: 72px; 
   }
   footer li{
     padding:8px;
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 300;
     line-height: 25.6px;
