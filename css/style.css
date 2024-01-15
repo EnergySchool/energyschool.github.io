@@ -540,7 +540,7 @@ fieldset{
   footer p{
     padding:20px 0px;
   }
-  @media only screen and (max-width:992px){
+  @media only screen and (max-width:1024px){
    
     nav{
     border-bottom: 550px solid black;
@@ -776,6 +776,10 @@ body{
 #sales h2{
   font-size: 20px;
 }
+.sale-info{
+    left:0%
+}
+    
 .sale-info>strong {
   font-size:1.5vw;
 }
