@@ -451,8 +451,8 @@ fieldset{
   .sale-info{
     transform: rotate(135deg);
     width:100%;
-    top:10%;
-    left:10%;
+    top:30%;
+/*     left:10%; */
     position: absolute;
    padding:8px;
   }
