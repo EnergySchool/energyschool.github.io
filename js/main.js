@@ -15,7 +15,7 @@ if(window.innerWidth<600){
 }
 allCourse.addEventListener("click",function(){
    for(let i=4;i<courses.length;i++){
-      courses[i].classList.remove("hidden")
+      courses[i].classList.toggle("hidden")
    }
 })
 
