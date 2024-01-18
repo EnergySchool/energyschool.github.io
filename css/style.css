@@ -560,7 +560,9 @@ fieldset{
   footer p{
     padding:20px 0px;
   }
-
+  .hidden{
+      display:none
+  }
   @media only screen and (max-width:1024px){
    
     nav{
