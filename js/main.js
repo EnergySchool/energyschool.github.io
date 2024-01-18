@@ -8,6 +8,7 @@ menuBtn.addEventListener("click",function(){
    menu.classList.toggle("show")
 })
 if(window.innerWidth<600){
+   allCourse.classList.remove("hidden")
    for(let i=4;i<courses.length;i++){
       courses[i].classList.add("hidden")
    }
