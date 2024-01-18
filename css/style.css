@@ -783,7 +783,7 @@ body{
   height: 300px;
 }
 #sales h2{
-  font-size: 20px;
+  font-size: 18px;
 }
 .sale-info{
     top:0%
@@ -791,13 +791,9 @@ body{
     
 .sale-info>strong {
   font-size:1.5vw;
+    width:100%;
 }
-    .sale-info h2{
-        font-size:14px;
-    }
-     .sale-info>strong{
-         width:100%;
-     }
+
 footer{
   flex-direction: column;
   align-items: start;
