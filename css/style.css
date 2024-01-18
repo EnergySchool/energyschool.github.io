@@ -176,10 +176,19 @@ main h1{
 }
 .register-form-header,
 .register-info-header,
-.about-header{
+.about-header,
+.course-header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.course-header{
+      width: 100%;
+  color: #009396;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+ line-height: normal;
 }
 .line{
     width:80px;
