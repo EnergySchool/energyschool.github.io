@@ -801,12 +801,22 @@ body{
 }
 
 footer{
-  flex-direction: column;
+   flex-wrap: wrap;
   align-items: start;
+  justify-content: start;
+}
+
+.logo-footer{
+  width: 100%;
+  order:1
 }
 
 .social-media{
-  display: none;
+  order: 2;
+  margin:20px
+}
+.contact-info{
+  order:3
 }
 
  }
