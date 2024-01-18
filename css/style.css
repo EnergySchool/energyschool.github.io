@@ -543,12 +543,18 @@ fieldset{
     font-weight: 300;
     line-height: 25.6px;
   }
+ .social-media a{
+    color:white;
+    text-decoration: none;
+
+  }
   footer i{
     padding-right:8px;
   }
   footer p{
     padding:20px 0px;
   }
+
   @media only screen and (max-width:1024px){
    
     nav{
