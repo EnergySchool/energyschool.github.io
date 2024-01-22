@@ -658,6 +658,8 @@ fieldset{
       margin:10px;
      
     }
+    .course:hover{
+        transform:scale(1,1)
  
     .register-courses{
       padding:10px 50px;
