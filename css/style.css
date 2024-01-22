@@ -439,19 +439,29 @@ fieldset{
   background-color: transparent;
   font-size: 20px;
 }
-  #sales{
+   #sales{
     width:100%;
-    height: 900px;
+    height: 1000px;
     background-image: url("../image/sales-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-   
-    padding:50px;
-    position: relative;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .sales{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    transform: rotate(45deg);
+    margin:auto;
+    align-items: center;
 
   }
+  
   .sale-grey{
     
     background: linear-gradient(75deg, rgba(217, 217, 217, 0.80) 20.44%, rgba(217, 217, 217, 0.00) 157.99%);
@@ -465,20 +475,16 @@ fieldset{
 
   }
   .sale-info{
-    transform: rotate(135deg);
-    width:100%;
-    top:30%;
-/*     left:10%; */
-    position: absolute;
-   padding:8px;
+    transform: rotate(-45deg);
+    padding:10px;
+    text-align: center;
+
   }
-  .sale-info>h1{
-    font-size: 2.2vw;
-  }
+
   .sale-info>strong{
     font-size: 1.3vw;
-    width:70%;
-    margin:auto;
+    width:80%;
+    margin:10px auto;
     display: block;
   }
   .sale-info>ol{
@@ -491,41 +497,20 @@ fieldset{
     
   }
  
-
-  .big-sale{
-    
-   
-      width: 35vw;
-      height: 35vw;
-
-    display: flex;
-    flex-wrap: wrap;
-     transform: rotate(-135deg);
-     position: absolute;
-     top:20%
-
-  }
-  .big-sale1{
-    left:20%;
-
-
-  }
-  .big-sale2{
-    left:45%
-
-  }
-
-
-
   .sale-small{
-    width:50%;
-    height: 50%;
-    border: 1px solid white;
-    position: relative;
+    width: 20vw;
+     height: 20vw;
+     border: 1px solid white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
     
 
   }
 
+  .sale-item-hidden{
+    border:none
+  }
 
   footer{
     background-image: url("../image/footer.png");
@@ -677,11 +662,21 @@ fieldset{
     .register-courses{
       padding:10px 50px;
     }
-    #sales{
-      height: 600px;
+     #sales{
+      height: 1300px;
+      padding:20vw 0;
     }
-    .sale-info>ol{
-      display: none;
+    .sale-info{
+      transform: rotate(-135deg);
+    }
+    .sales{
+      transform: rotate(135deg);
+   width:90vw;
+
+    }
+    .sale-small{
+      width: 30vw;
+      height:30vw;
     }
     footer{
       padding:20px;
@@ -794,21 +789,32 @@ body{
   width:100%;
   
 }
-#sales{
-  height: 300px;
-}
 #sales h2{
-  font-size: 18px;
-}
-.sale-info{
-    top:0%
-}
-    
+  font-size: 32px;
+  margin:10px;
+} 
 .sale-info>strong {
-  font-size:1.5vw;
-    width:100%;
+  font-size:18px;
+ }
+#sales{
+  display: block;
+  height:900px;
+  padding: 40vw 0;
+
+}
+.sales{
+  width:170vw;
+  position: relative;
+  left:-35vw;
+  top:20vw;
+  transform: rotate(135deg)
 }
 
+.sale-small{
+  width: 55vw;
+  height:55vw;
+  color: white;
+}
 footer{
    flex-wrap: wrap;
   align-items: start;
