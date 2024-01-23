@@ -483,9 +483,12 @@ fieldset{
     text-align: center;
 
   }
+.sale-info h2{
+    font-size:38px;
+}
 
   .sale-info>strong{
-    font-size: 1.3vw;
+    font-size: 22px;
     width:80%;
     margin:10px auto;
     display: block;
